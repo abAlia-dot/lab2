@@ -1,75 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style>
-p {
-  text-align: center;
-  color: red;
-} 
-h1 {
-  background-color: green;
-}
-
-div {
-  background-color: lightblue;
-}
-
-p {
-  background-color: yellow;
-}
-body {
-  background-image: url("paper.gif");
-  background-image: url("gradient_bg.png");
-  background-repeat: repeat-x;
-  background-image: url("img_tree.png");
-  background-repeat: no-repeat;
-  background-position: right top;
-  margin-right: 200px;
-  background-attachment: scroll;
-  background: #ffffff url("img_tree.png") no-repeat right top;
-  margin-right: 200px;
-}
-p.dotted {border-style: dotted;}
-p.dashed {border-style: dashed;}
-p.solid {border-style: solid;}
-p.double {border-style: double;}
-p.groove {border-style: groove;}
-p.ridge {border-style: ridge;}
-p.inset {border-style: inset;}
-p.outset {border-style: outset;}
-p.none {border-style: none;}
-p.hidden {border-style: hidden;}
-p.mix {border-style: dotted dashed solid double;}
-p.one {
-  border-style: solid;
-  border-width: 5px;
-}
-
-p.two {
-  border-style: solid;
-  border-width: medium;
-}
-
-p.three {
-  border-style: dotted;
-  border-width: 2px;
-}
-
-p.four {
-  border-style: dotted;
-  border-width: thick;
-}
-
-p.five {
-  border-style: double;
-  border-width: 15px;
-}
-
-p.six {
-  border-style: double;
-  border-width: thick;
-}
-</style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -185,6 +117,15 @@ We are still in the div element.
 
 <p><b>Note:</b> The "border-width" property does not work if it is used alone. 
 Always specify the "border-style" property to set the borders first.</p>
+
+<h2>The border-color Property</h2>
+<p>This property specifies the color of the four borders:</p>
+
+<p class="one">A solid red border</p>
+<p class="two">A solid green border</p>
+<p class="three">A dotted blue border</p>
+
+<p><b>Note:</b> The "border-color" property does not work if it is used alone. Use the "border-style" property to set the borders first.</p>
 </body>
 </html>
 
