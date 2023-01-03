@@ -443,6 +443,9 @@ p::first-line {
   color: #ff0000;
   font-variant: small-caps;
 }
+a[target] {
+  background-color: yellow;
+}
         </style>
 
 <title>Page Title</title>
@@ -1074,6 +1077,12 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nu
 
 <p>You can use the ::first-line pseudo-element to add a special effect to the first line of a text. Some more text. And even more, and more, and more, and more, and more, and more, and more, and more, and more, and more, and more, and more.</p>
 
+<h2>CSS [attribute] Selector</h2>
+<p>The links with a target attribute gets a yellow background:</p>
+
+<a href="https://www.w3schools.com">w3schools.com</a>
+<a href="http://www.disney.com" target="_blank">disney.com</a>
+<a href="http://www.wikipedia.org" target="_top">wikipedia.org</a>
 </body>
 </html>
 
