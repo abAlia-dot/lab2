@@ -459,6 +459,14 @@ p {color: red;}
   height: 44px;
   background: url(img_navsprites.gif) -91px 0;
 }
+body {
+  counter-reset: section;
+}
+
+h2::before {
+  counter-increment: section;
+  content: "Section " counter(section) ": ";
+}
         </style>
 
 <title>Page Title</title>
@@ -1101,6 +1109,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nu
 
 <img id="home" src="img_trans.gif" width="1" height="1">
 <img id="next" src="img_trans.gif" width="1" height="1">
+
 
 </body>
 </html>
