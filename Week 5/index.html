@@ -243,7 +243,13 @@
     <button onclick="getLocation()">Try It</button>
 
     <p id="demo"></p>
-    
+    <script>
+      const x = document.getElementById("demo");
+      
+      function getLocation() {
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(showPosition);
+        } else {     
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
