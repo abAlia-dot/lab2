@@ -333,10 +333,6 @@ echo $gender;
 ?>
 
 
-
-
-
-
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->

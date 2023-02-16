@@ -12,11 +12,13 @@ if ($conn->connect_error) {
 }
 
 // sql to create table
-$sql = "CREATE TABLE abalia_myguest(
+$sql = "CREATE TABLE abalia_myguest (
 id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-firstname VARCHAR(30) NOT NULL,
-lastname VARCHAR(30) NOT NULL,
-email VARCHAR(50),
+name VARCHAR(255) NOT NULL,
+email VARCHAR(255) NOT NULL,
+website VARCHAR(100),
+comment TEXT,
+gender VARCHAR(30),
 reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 )";
 
@@ -27,4 +29,4 @@ if ($conn->query($sql) === TRUE) {
 }
 
 $conn->close();
-?> 
+?>
