@@ -11,13 +11,19 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "INSERT INTO MyGuests (full_name, subject_taken, email, message_flow)
-VALUES ('John', 'Doe', 'john@example.com', 'Hello')";
+// sql to create table
+$sql = "CREATE TABLE MyGuests (
+id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+full_name VARCHAR(30) NOT NULL,
+email VARCHAR(30) NOT NULL,
+subject_taken VARCHAR(50),
+message_flow VARCHAR(500)
+)";
 
 if ($conn->query($sql) === TRUE) {
-  echo "New record created successfully";
+  echo "Table MyGuests created successfully";
 } else {
-  echo "Error: " . $sql . "<br>" . $conn->error;
+  echo "Error creating table: " . $conn->error;
 }
 
 $conn->close();
